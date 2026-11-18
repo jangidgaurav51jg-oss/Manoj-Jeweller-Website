@@ -1,4 +1,4 @@
-// Manoj Kumar Jewellers - Official Image Assets & Fast Loader
+// Manoj Jewellers - Official Image Assets & Fast Loader
 // Ensures all jewellery photos load instantly and in full HD quality
 
 function applySiteImages() {

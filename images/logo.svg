@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 120" role="img" aria-labelledby="title">
+  <title id="title">Manoj Jewellers - Gold, Silver, Diamond</title>
+  <rect width="620" height="120" fill="#fff"/>
+  <g fill="#a87d28">
+    <path d="M56 19 67 5l11 14-11 13z"/>
+    <path d="M41 40h52v53H41z" fill="none" stroke="#c99e44" stroke-width="2"/>
+    <text x="67" y="79" text-anchor="middle" font-family="Georgia,serif" font-size="35" font-weight="bold">MJ</text>
+  </g>
+  <text x="116" y="59" fill="#24201a" font-family="Georgia,serif" font-size="37" font-weight="bold">Manoj Jewellers</text>
+  <text x="118" y="88" fill="#8f651f" font-family="Arial,sans-serif" font-size="13" font-weight="bold" letter-spacing="5">GOLD  |  SILVER  |  DIAMOND</text>
+</svg>

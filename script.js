@@ -1,4 +1,4 @@
-// Manoj Kumar Jewellers - Interactive Scripts
+// Manoj Jewellers - Interactive Scripts
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile Navigation Toggle
@@ -113,12 +113,12 @@ function handleContactSubmit(e) {
   const phone = document.getElementById('custPhone').value.trim();
   const message = document.getElementById('custMsg').value.trim();
 
-  let waText = `*Namaste Manoj Kumar Jewellers!*%0A%0A`;
+  let waText = `*Namaste Manoj Jewellers!*%0A%0A`;
   waText += `*Naya Sandesh (Website Enquiry):*%0A`;
   waText += `👤 *Naam:* ${encodeURIComponent(name)}%0A`;
   waText += `📞 *Phone:* ${encodeURIComponent(phone)}%0A`;
   waText += `💬 *Sandesh:* ${encodeURIComponent(message)}%0A%0A`;
-  waText += `_Manoj Kumar Jewellers, Jaipur website enquiry._`;
+  waText += `_Manoj Jewellers, Jaipur website enquiry._`;
 
   const waUrl = `https://wa.me/919079093411?text=${waText}`;
   window.open(waUrl, '_blank');
