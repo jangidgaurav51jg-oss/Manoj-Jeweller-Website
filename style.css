@@ -249,19 +249,21 @@ ul {
 .brand-copy strong {
   color: #24201A;
   font-family: var(--font-serif);
-  font-size: 1.08rem;
+  font-size: 1.12rem;
   font-weight: 700;
+  text-rendering: optimizeLegibility;
   white-space: nowrap;
 }
 
 .brand-copy small {
   margin-top: 6px;
-  color: #A87D28;
+  color: #9A7025;
   font-family: var(--font-sans);
-  font-size: 0.54rem;
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 2.2px;
   text-align: center;
+  text-rendering: optimizeLegibility;
   white-space: nowrap;
 }
 
@@ -510,27 +512,27 @@ ul {
   align-items: flex-start;
   justify-content: center;
   padding: 36px 42px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(247, 239, 218, 0.84)),
-    url("images/dream.jpg") center / cover no-repeat;
+  background: #FFFDF8;
   color: var(--text-dark);
 }
 
 .dream-card-title {
   margin: 0;
-  color: #B98A32;
-  font-family: "Brush Script MT", "Segoe Script", cursive;
-  font-size: 3.15rem;
+  color: #8F651F;
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-style: italic;
   font-weight: 700;
-  line-height: 1.02;
+  line-height: 1.12;
   text-align: left;
-  text-shadow: 0 1px 0 #FFF, 0 2px 8px rgba(168, 125, 40, 0.28);
-  transform: rotate(-3deg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .dream-card-title span {
   display: inline-block;
-  margin-left: 20px;
+  color: #A77525;
+  margin-left: 28px;
 }
 
 .dream-card-divider {
@@ -541,11 +543,12 @@ ul {
 }
 
 .dream-card-subtitle {
-  color: #59534B;
+  color: #37322C;
   font-family: var(--font-serif);
-  font-size: 1.12rem;
-  font-weight: 600;
+  font-size: 1.22rem;
+  font-weight: 700;
   line-height: 1.45;
+  text-rendering: optimizeLegibility;
 }
 
 /* ==========================================================================
@@ -1194,6 +1197,19 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .dream-card {
+    width: 100%;
+    min-height: 380px;
+  }
+
+  .dream-card-title {
+    font-size: 2.25rem;
+  }
+
+  .dream-card-title span {
+    margin-left: 18px;
+  }
+
   .top-bar-content {
     justify-content: center;
     text-align: center;
@@ -1293,6 +1309,19 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .dream-card {
+    min-height: 340px;
+    padding: 28px 24px;
+  }
+
+  .dream-card-title {
+    font-size: 1.95rem;
+  }
+
+  .dream-card-subtitle {
+    font-size: 1.05rem;
+  }
+
   .brand-logo {
     gap: 7px;
   }
