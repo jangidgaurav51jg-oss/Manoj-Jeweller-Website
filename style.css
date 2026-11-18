@@ -219,12 +219,55 @@ ul {
 .brand-logo {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-.header-logo-img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
+.brand-monogram {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border: 1px solid rgba(201, 158, 68, 0.72);
+  border-radius: 50%;
+  color: var(--gold-primary);
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+  background: #FFFEFA;
+  box-shadow: 0 2px 10px rgba(201, 158, 68, 0.12);
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
+.brand-copy strong {
+  color: #24201A;
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.brand-copy small {
+  margin-top: 6px;
+  color: #A87D28;
+  font-family: var(--font-sans);
+  font-size: 0.54rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.brand-copy small b {
+  color: #7A7A7A;
+  font-weight: 500;
 }
 
 .main-nav ul {
@@ -458,6 +501,51 @@ ul {
 .dream-card-img {
   width: 100%;
   display: block;
+}
+
+.dream-card {
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 36px 42px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(247, 239, 218, 0.84)),
+    url("images/dream.jpg") center / cover no-repeat;
+  color: var(--text-dark);
+}
+
+.dream-card-title {
+  margin: 0;
+  color: #B98A32;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 3.15rem;
+  font-weight: 700;
+  line-height: 1.02;
+  text-align: left;
+  text-shadow: 0 1px 0 #FFF, 0 2px 8px rgba(168, 125, 40, 0.28);
+  transform: rotate(-3deg);
+}
+
+.dream-card-title span {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.dream-card-divider {
+  width: 82px;
+  height: 2px;
+  margin: 42px 0 22px;
+  background: #C99E44;
+}
+
+.dream-card-subtitle {
+  color: #59534B;
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.45;
 }
 
 /* ==========================================================================
@@ -1205,6 +1293,27 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .brand-logo {
+    gap: 7px;
+  }
+
+  .brand-monogram {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+    font-size: 1.12rem;
+  }
+
+  .brand-copy strong {
+    font-size: 0.82rem;
+  }
+
+  .brand-copy small {
+    margin-top: 4px;
+    font-size: 0.42rem;
+    letter-spacing: 1.25px;
+  }
+
   .category-grid {
     grid-template-columns: 1fr;
   }
